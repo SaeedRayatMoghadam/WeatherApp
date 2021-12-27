@@ -59,7 +59,7 @@ function setInfo(weather) {
   day.innerText = getDayName(d.getDay());
 
   //Set HUMIDITY , WIND
-  humidity.innerHTML = weather.current.humidity;
+  humidity.innerHTML = `${weather.current.humidity} RH`;
   wind.innerHTML = `${weather.forecast.forecastday[0].day.maxwind_kph} KM/H`;
 
   //Set Days
