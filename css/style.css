@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "SigmarOne";
+  src: url("../fonts/SigmarOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ConcertOne";
+  src: url("../fonts/ConcertOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FredokaOne";
+  src: url("../fonts/FredokaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Righteous";
+  src: url("../fonts/Righteous-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bg-cover {
+  background-image: url("../images/wallpapersden.com_clouds-4k_4474x2517.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: 5% auto 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+  width: 60%;
+  border-radius: 10px;
+}
+
+.header {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  color: #fff;
+  font-family: "SigmarOne";
+  padding: 20px 0 40px;
+  font-size: 2.5em;
+}
+
+input {
+  padding: 10px 0 10px 5px;
+  width: 40%;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: none;
+  color: #fff;
+  font-family: "Righteous";
+  caret-color: #fff;
+}
+input:-webkit-autofill {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.left {
+  width: 50%;
+  padding: 10px 20px;
+  color: #fff;
+  font-family: "FredokaOne";
+}
+.cityName {
+  display: inline;
+  color: #fff;
+  font-size: 1.7em;
+  padding: 20px 0 10px;
+}
+.info i {
+  font-size: 1.7em;
+}
+.day {
+  font-size: 1.7rem;
+  padding: 10px 0 0;
+}
+.currentDate {
+  padding: 10px 0 0;
+}
+.pr-1 {
+  padding-right: 5px;
+}
+
+.center {
+  text-align: center;
+  padding: 10px 20px;
+  position: relative;
+  display: inline-block;
+  bottom: 55px;
+  left: 200px;
+  border: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  height: 170px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center:hover {
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+.center h3 {
+  letter-spacing: 2px;
+}
+
+.center h2 {
+  border-bottom: 1px solid #fff;
+  border-width: 2px;
+  padding-bottom: 5px;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  padding: 10px 15px;
+}
+
+.right header {
+  border-bottom: 2px solid #fff;
+}
+
+.humidity,
+.wind {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bolder;
+  font-family: "FredokaOne";
+  letter-spacing: 2px;
+}
+
+.wind {
+  padding-bottom: 8px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+.forecastItem {
+  background: rgba(3, 3, 3, 0.3);
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bolder;
+  text-align: center;
+  font-family: "ConcertOne";
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+.forecastItem:hover {
+  background: rgba(255, 255, 255, 1);
+  color: #000;
+  transition: 0.3s ease-in;
+}
+p.degree {
+  padding: 8px 0;
+}
+
+
+@media only screen and (max-width : 1120px) {
+  .row {
+    flex-direction: column;
+  }
+  .center {
+    top: 10px;
+    left: 70px;
+    margin-bottom: 20px;
+  }
+}
