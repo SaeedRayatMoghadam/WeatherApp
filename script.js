@@ -23,10 +23,10 @@ async function getWeather(e) {
   e.preventDefault();
   var res = await (
     await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${city.value}&days=3&aqi=no&alerts=no`
+      `http://api.weatherapi.com/v1/forecast.json?key=${KEY}&q=${city.value}&days=3&aqi=no&alerts=no`,
+      { mode: "cors" }
     )
   ).json();
-  console.log(res);
 
   if (res.error) {
     cityLocation.innerHTML = res.error.message;
